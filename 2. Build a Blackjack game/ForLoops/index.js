@@ -22,6 +22,7 @@ for(let i = 0; i < cards.length; i++)
     console.log(cards[i])
 }
 
+/*
 let sentence = ["Hello ", "my ", "name ", "is ", "Per"] 
 let greetingEl = document.getElementById("greeting-el")
 
@@ -30,3 +31,30 @@ for(let i = 0; i < sentence.length; i++)
 {
     greetingEl.textContent += sentence[i]
 }
+*/
+
+let player1Time = 102
+let player2Time = 107
+
+function getTime(){
+    if (player1Time < player2Time) {
+        return player1Time
+    } else if (player2Time < player1Time) {
+        return player2Time
+    } else {
+        return player1Time
+    }
+}
+
+function getTotalTime(){
+    return player1Time + player2Time
+}
+
+let totalTime = getTotalTime()
+console.log(totalTime)
+
+let randomNumber = Math.random() * 6
+console.log(randomNumber)
+
+let flooredNumber = Math.floor(3.45632)
+console.log(flooredNumber)

@@ -1,0 +1,30 @@
+let age = 15
+
+// less than 6 years old -> free
+// 6 to 17 years old     -> child discount
+// 18 to 26 years old    -> student discount
+// 27 to 66 years old    -> full price
+// over 66 years old     -> senior citizen discount
+if(age < 6)
+{
+    console.log("Since you're younger than 6, you get the product for free.")
+}
+else if(age > 6 && age < 17)
+{
+    console.log("Congrats! You received a child discount.")
+}
+else if(age > 18 && age < 26)
+{
+    console.log("You are no longer a child. Here's a student discount.")
+}
+else if(age > 27 && age < 66)
+{
+    console.log("You are a man! Full price for you brother!")
+}
+else
+{
+    console.log("You're an old person. Here'sa senior citizen discount.")
+}
+
+// Create a conditional statement (if/else/else if) that logs out the discount
+// the passenger will get based upon the value of the age variable
